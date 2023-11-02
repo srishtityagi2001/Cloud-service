@@ -1,83 +1,375 @@
-<html>
-<head>
-<tile>Calculator</tile>
-</head>
-<body>
-<fieldset>
+<!DOCTYPE html> 
+<html> 
 
-<legend>Calculator</legend>
-<style> fieldset{
-background-color: aqua; width: 25%;
-}
-</style>
-<center>
-<script>
-function getval(){
+<head> 
+	<title>HTML Calculator</title> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var s=num1+num2;
-document.getElementById("res").value=s;
-}
-</script>
-<script>
-function getval2(){
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: green; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var s=num1-num2;
-document.getElementById("res").value=s;
-}
-</script>
-<script>
-function getval3(){
+<body> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var s=num1*num2;
- 
-document.getElementById("res").value=s;
-}
-</script>
-<script>
-function getval4(){
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="result"> 
+			</td> 
+			<td><input type="button" value="c"></td> 
+		</tr> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var s=num1/num2;
-document.getElementById("res").value=s;
-}
-</script>
-<script>
-function getval5(){
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" value="*"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" value="+"></td> 
+		</tr> 
+	</table> 
+</body> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var s=num1%num2;
-document.getElementById("res").value=s;
-}
-</script>
-<script>
-function getval6(){
+</html> 
+<!DOCTYPE html> 
+<html> 
 
-var num1=parseInt(document.getElementById("number").value); var num2=parseInt(document.getElementById("number1").value); var a=Math.pow(num1,num2); document.getElementById("res").value=a;
-}
-</script>
-<h2>calculator</h2>
-<h2>Enter the Ist number</h2>
-<form>
-<input type="text" id="number" name=""/><br/>
+<head> 
+	<title>HTML Calculator</title> 
 
-</form>
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: green; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
 
-<h2>Enter the 2nd number</h2>
-<form>
-<input type="text" id="number1" name=""/><br/>
+<body> 
 
-</form>
-<form>
-<input type="button" value="+" onclick="getval()"/>
-<input type="button" value="-" onclick="getval2()"/>
-<input type="button" value="*" onclick="getval3()"/>
-<input type="button" value="/" onclick="getval4()"/>
-<input type="button" value="%" onclick="getval5()"/>
-<input type="button" value="^" onclick="getval6()"/>
-</form>
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="result"> 
+			</td> 
+			<td><input type="button" value="c"></td> 
+		</tr> 
 
-<h2>Result</h2>
- 
-<form>
-<input type="text" id="res" name=""/><br/>
-</form>
-</body>
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" value="*"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" value="+"></td> 
+		</tr> 
+	</table> 
+</body> 
+
+</html> 
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>HTML Calculator</title> 
+
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: green; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="result"> 
+			</td> 
+			<td><input type="button" value="c"></td> 
+		</tr> 
+
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" value="*"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" value="+"></td> 
+		</tr> 
+	</table> 
+</body> 
+
+</html> 
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>HTML Calculator</title> 
+
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: green; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="result"> 
+			</td> 
+			<td><input type="button" value="c"></td> 
+		</tr> 
+
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" value="*"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" value="+"></td> 
+		</tr> 
+	</table> 
+</body> 
+
+</html> 
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>HTML Calculator</title> 
+
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: green; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="result"> 
+			</td> 
+			<td><input type="button" value="c"></td> 
+		</tr> 
+
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" value="*"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" value="+"></td> 
+		</tr> 
+	</table> 
+</body> 
+
 </html> 
